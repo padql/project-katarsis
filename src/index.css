@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', monospace;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .btn-neo {
+    @apply border-4 border-black font-display text-sm tracking-widest
+           shadow-neo transition-all duration-100
+           hover:shadow-none hover:translate-x-1 hover:translate-y-1;
+  }
+
+  .card-neo {
+    @apply border-4 border-black shadow-neo transition-all duration-100
+           hover:shadow-none hover:-translate-x-0 hover:translate-x-1 hover:translate-y-1;
+  }
+
+  .section-label {
+    @apply font-mono text-xs tracking-widest opacity-60;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-6xl uppercase mt-1;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', monospace;
+  }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 22s linear infinite;
+  width: max-content;
+}
+
+/* Cursor blink for terminal feel */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Scanline subtle overlay */
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+}
