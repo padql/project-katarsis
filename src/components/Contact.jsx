@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 
 const SOCIALS = [
   { label: "GITHUB", color: "#000", tc: "#fff"  , href: "https://github.com/padql" },
-  { label: "LINKEDIN", color: "#3B82F6", tc: "#fff", href: "https://linkedin.com/company/projectkatarsis" },
+  { label: "LINKEDIN", color: "#3B82F6", tc: "#fff", href: "https://www.linkedin.com/in/ihfadzh-diinaka-61634b337/" },
   { label: "INSTAGRAM", color: "#FF2E9A", tc: "#fff", href: "https://instagram.com/qudalautt" },
 ];
 

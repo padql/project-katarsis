@@ -4,6 +4,7 @@
 
 Portofolio neobrutalism untuk Project Katarsis. Dibangun dengan React + Vite + Tailwind CSS.
 
+🌐**https://projectkatarsis.vercel.app**
 ---
 
 ## Stack
@@ -12,9 +13,7 @@ Portofolio neobrutalism untuk Project Katarsis. Dibangun dengan React + Vite + T
 |------------|-----------------------------------|
 | Language   | JavaScript (ES2024)               |
 | Frontend   | React 18, Vite 5, Tailwind CSS 3  |
-| Backend    | Supabase, PostgreSQL              |
-| Fonts      | Bebas Neue, Space Mono (Google)   |
-| Deploy     | Vercel / Netlify (static)         |
+| Hosting    | Github Pages (static)             |
 
 ---
 
@@ -49,20 +48,20 @@ project-katarsis/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── Nav.jsx          # Navigasi sticky + mobile hamburger
-│   │   ├── Marquee.jsx      # Teks berjalan otomatis
-│   │   ├── Hero.jsx         # Section hero dengan typing effect
-│   │   ├── Projects.jsx     # Grid 3 proyek utama
-│   │   ├── About.jsx        # Manifesto + stack log
-│   │   ├── Process.jsx      # 5 tahap debugging mental
-│   │   └── Contact.jsx      # Form kontak + footer
+│   │   ├── Nav.jsx          
+│   │   ├── Marquee.jsx      
+│   │   ├── Hero.jsx         
+│   │   ├── Projects.jsx     
+│   │   ├── About.jsx        
+│   │   ├── Process.jsx      
+│   │   └── Contact.jsx      
 │   ├── data/
-│   │   └── index.js         # Semua data konten (projects, steps, dll)
+│   │   └── index.js         
 │   ├── hooks/
-│   │   └── useActiveSection.js  # Hook IntersectionObserver
+│   │   └── useActiveSection.js  
 │   ├── App.jsx
 │   ├── main.jsx
-│   └── index.css            # Tailwind directives + custom animations
+│   └── index.css            
 ├── index.html
 ├── vite.config.js
 ├── tailwind.config.js
@@ -79,7 +78,6 @@ Semua teks, proyek, dan data ada di **`src/data/index.js`**. Edit file itu untuk
 - `PROCESS_STEPS` — tahapan metode kerja
 - `STACK_LOG` — daftar teknologi
 - `HERO_STATS` — angka statistik di hero
-- `TEAM` — anggota kolektif
 
 ---
 
@@ -94,4 +92,4 @@ Semua teks, proyek, dan data ada di **`src/data/index.js`**. Edit file itu untuk
 
 ---
 
-*"Koding yang tidak menangkap kecemasan adalah program pasaran — kode kami adalah terapi."*
+*"MEMBANGUN DUNIA SENDIRI DI ANTARA BARIS KODE ADALAH CARA TERBAIK UNTUK MENDAPATKAN KETENANGAN."*
