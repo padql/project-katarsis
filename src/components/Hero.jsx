@@ -85,10 +85,10 @@ export default function Hero() {
               <span className="font-mono text-xs tracking-widest opacity-60">JS · REACT · VITE</span>
             </div>
 
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-wrap gap-3 justify-end">
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-3">
                 {HERO_STATS.map((stat, i) => (
-                  <div key={i} className="border-4 border-black p-3 shadow-neo w-32" style={{ background: stat.bg }}>
+                  <div key={i} className="border-4 border-black p-3 shadow-neo flex-1" style={{ background: stat.bg }}>
                     <div className="font-display text-3xl leading-none" style={{ color: stat.tc }}>{stat.num}</div>
                     <div className="font-display text-xs tracking-widest mt-1" style={{ color: stat.tc, opacity: 0.85 }}>{stat.label}</div>
                   </div>

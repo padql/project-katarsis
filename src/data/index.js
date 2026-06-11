@@ -100,7 +100,7 @@ export const STACK_LOG = [
   { year: "2024", name: "POSTGRESQL",          role: "Relational Database",   city: "Production",   color: "#FF2E9A" },
   { year: "2025", name: "SUPABASE",            role: "Backend & Database",    city: "Aktif",        color: "#FF5733" },
   { year: "2025", name: "VERCEL",              role: "Deployment Platform",   city: "Deploy",       color: "#F97316" },
-  { year: "2025", name: "EXPO + REACT NATIVE", role: "Mobile Development",    city: "Aktif",        color: "#3B82F6" },
+  { year: "2026", name: "EXPO + REACT NATIVE", role: "Mobile Development",    city: "Aktif",        color: "#3B82F6" },
 ];
 
 // ─── Solo developer ──────────────────────────────────────────────────────────

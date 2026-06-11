@@ -29,13 +29,13 @@
 @layer components {
   .btn-neo {
     @apply border-4 border-black font-display text-sm tracking-widest
-           shadow-neo transition-all duration-100
-           hover:shadow-none hover:translate-x-1 hover:translate-y-1;
+          shadow-neo transition-all duration-100
+          hover:shadow-none hover:translate-x-1 hover:translate-y-1;
   }
 
   .card-neo {
     @apply border-4 border-black shadow-neo transition-all duration-100
-           hover:shadow-none hover:-translate-x-0 hover:translate-x-1 hover:translate-y-1;
+          hover:shadow-none hover:-translate-x-0 hover:translate-x-1 hover:translate-y-1;
   }
 
   .section-label {
