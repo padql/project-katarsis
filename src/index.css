@@ -13,6 +13,7 @@
 
   body {
     font-family: 'Space Mono', monospace;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -71,6 +72,16 @@
 
 .cursor-blink {
   animation: blink 1s step-end infinite;
+}
+
+/* Grid walk animation */
+@keyframes grid-walk {
+  from { background-position: 0 0; }
+  to   { background-position: 44px 44px; }
+}
+
+.grid-walk {
+  animation: grid-walk 3s linear infinite;
 }
 
 /* Scanline subtle overlay */

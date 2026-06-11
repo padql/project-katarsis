@@ -13,6 +13,7 @@ export const PROJECTS = [
     tags: ["REACT", "VITE", "PWA"],
     bg: "#FFE135",
     text: "#000",
+    screenshot: "keeply",
   },
   {
     id: "02",
@@ -24,6 +25,7 @@ export const PROJECTS = [
     tags: ["SUPABASE", "DATABASE", "JSONB"],
     bg: "#FF5733",
     text: "#fff",
+    screenshot: "tokoquda-distribusi",
   },
   {
     id: "03",
@@ -35,6 +37,19 @@ export const PROJECTS = [
     tags: ["REACT", "DASHBOARD", "ANALYTICS"],
     bg: "#3B82F6",
     text: "#fff",
+    screenshot: "tokoquda-cpanel",
+  },
+  {
+    id: "04",
+    title: "CAUSEFAST: MANAGEMENT SYSTEM",
+    category: "MOBILE APP (EXPO)",
+    year: "2026",
+    location: "JAKARTA TIMUR",
+    desc: "Sistem pencatatan data acara dan manajemen HTM berbasis mobile. Eksplorasi tentang bagaimana sebuah aplikasi digunakan untuk menyusun kepastian jadwal dan mengukur variabel luar ruangan secara presisi, mengubah kekacauan koordinasi menjadi baris data yang patuh.",
+    tags: ["EXPO", "REACT NATIVE", "MOBILE"],
+    bg: "#3B82F6",
+    text: "#000",
+    screenshot: "causefast",
   },
 ];
 
@@ -79,12 +94,13 @@ export const PROCESS_STEPS = [
 
 // ─── Stack / "Exhibitions" equivalent ───────────────────────────────────────
 export const STACK_LOG = [
-  { year: "2024", name: "REACT + VITE",        role: "Frontend Utama",        city: "Aktif",        color: "#FFE135" },
-  { year: "2025", name: "SUPABASE",            role: "Backend & Database",    city: "Aktif",        color: "#FF5733" },
+  { year: "2024", name: "JAVASCRIPT",          role: "Bahasa Utama",          city: "Production",   color: "#22C55E" },
   { year: "2024", name: "TAILWIND CSS",        role: "Styling System",        city: "Aktif",        color: "#3B82F6" },
-  { year: "2025", name: "JAVASCRIPT",          role: "Bahasa Utama",          city: "Production",   color: "#22C55E" },
+  { year: "2024", name: "REACT + VITE",        role: "Frontend Utama",        city: "Aktif",        color: "#FFE135" },
   { year: "2024", name: "POSTGRESQL",          role: "Relational Database",   city: "Production",   color: "#FF2E9A" },
+  { year: "2025", name: "SUPABASE",            role: "Backend & Database",    city: "Aktif",        color: "#FF5733" },
   { year: "2025", name: "VERCEL",              role: "Deployment Platform",   city: "Deploy",       color: "#F97316" },
+  { year: "2025", name: "EXPO + REACT NATIVE", role: "Mobile Development",    city: "Aktif",        color: "#3B82F6" },
 ];
 
 // ─── Solo developer ──────────────────────────────────────────────────────────
@@ -99,7 +115,7 @@ export const SOLO_DEV = {
 
 // ─── Hero stats ──────────────────────────────────────────────────────────────
 export const HERO_STATS = [
-  { num: "3",    label: "PROYEK AKTIF", bg: "#FF5733", tc: "#fff" },
+  { num: "4",    label: "PROYEK AKTIF", bg: "#FF5733", tc: "#fff" },
   { num: "95%",  label: "INDEX LOGIKA", bg: "#3B82F6", tc: "#fff" },
   { num: "0",    label: "EMOSI LOG",    bg: "#FF2E9A", tc: "#fff" },
 ];

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Marquee from "./Marquee";
 import { HERO_STATS } from "../data";
-import GlitchDecode from "./GlitchDecode";
 
 const TYPING_TEXT = "LOGIKA YANG MENGEKANG";
 
@@ -25,10 +24,10 @@ export default function Hero() {
 
         {/* Left — main copy */}
         <div
-          className="flex flex-col justify-end p-6 md:p-10 lg:p-16 border-b-4 lg:border-b-0 lg:border-r-4 border-black"
+          className="flex flex-col justify-center relative p-6 md:p-10 lg:p-16 border-b-4 lg:border-b-0 lg:border-r-4 border-black"
           style={{ background: "#F0F7FF" }}
         >
-          <div className="mb-4">
+          <div className="mb-4 mt-4 lg:mt-2">
             <span
               className="inline-block border-4 border-black px-3 py-1 font-display text-xs tracking-widest"
               style={{ background: "#FF5733", color: "#fff" }}
@@ -63,16 +62,16 @@ export default function Hero() {
               BUKA LOG
             </button>
           </div>
+
         </div>
 
-        {/* Right — stats panel */}
+        {/* Right — floating cards */}
         <div
           className="flex flex-col relative overflow-hidden min-h-64 lg:min-h-0 scanlines"
           style={{ background: "#FFE135" }}
         >
-          {/* Grid pattern */}
           <div
-            className="absolute inset-0 opacity-10"
+            className="absolute inset-0 opacity-10 grid-walk"
             style={{
               backgroundImage:
                 "repeating-linear-gradient(0deg,transparent,transparent 40px,black 40px,black 44px)," +
@@ -80,42 +79,25 @@ export default function Hero() {
             }}
           />
 
-          <GlitchDecode />
-
           <div className="relative z-10 flex flex-col justify-between h-full p-8 lg:p-12">
             <div className="flex justify-between">
               <span className="font-mono text-xs tracking-widest opacity-60">BRAIN OUTPUT</span>
               <span className="font-mono text-xs tracking-widest opacity-60">JS · REACT · VITE</span>
             </div>
 
-            <div>
-              {/* Stat boxes */}
-              <div className="grid grid-cols-3 gap-4 mb-6">
-                {HERO_STATS.map(({ num, label, bg, tc }) => (
-                  <div
-                    key={label}
-                    className="border-4 border-black p-3 shadow-neo"
-                    style={{ background: bg }}
-                  >
-                    <div className="font-display text-3xl leading-none" style={{ color: tc }}>
-                      {num}
-                    </div>
-                    <div className="font-display text-xs tracking-widest mt-1" style={{ color: tc, opacity: 0.85 }}>
-                      {label}
-                    </div>
+            <div className="flex flex-col gap-6">
+              <div className="flex flex-wrap gap-3 justify-end">
+                {HERO_STATS.map((stat, i) => (
+                  <div key={i} className="border-4 border-black p-3 shadow-neo w-32" style={{ background: stat.bg }}>
+                    <div className="font-display text-3xl leading-none" style={{ color: stat.tc }}>{stat.num}</div>
+                    <div className="font-display text-xs tracking-widest mt-1" style={{ color: stat.tc, opacity: 0.85 }}>{stat.label}</div>
                   </div>
                 ))}
               </div>
 
-              {/* Tech stack badge */}
-              <div
-                className="border-4 border-black p-4 shadow-neo"
-                style={{ background: "#000", color: "#FFE135" }}
-              >
+              <div className="border-4 border-black p-4 shadow-neo" style={{ background: "#000", color: "#FFE135" }}>
                 <p className="font-display text-xs tracking-widest opacity-60 mb-1">TECH STACK</p>
-                <p className="font-display text-sm">
-                  JAVASCRIPT · REACT · VITE · TAILWIND · SUPABASE · POSTGRESQL
-                </p>
+                <p className="font-display text-sm">JAVASCRIPT · REACT · VITE · TAILWIND · SUPABASE · POSTGRESQL</p>
               </div>
             </div>
           </div>

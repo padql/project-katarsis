@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { PROJECTS } from "../data";
+import Modal from "./Modal";
 
-function ProjectCard({ project, isHovered, onEnter, onLeave }) {
+function ProjectCard({ project, isHovered, onEnter, onLeave, onClick }) {
   const isDark = project.text === "#fff";
 
   return (
@@ -14,6 +15,7 @@ function ProjectCard({ project, isHovered, onEnter, onLeave }) {
       }}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
+      onClick={onClick}
     >
       {/* Card header bar */}
       <div
@@ -72,6 +74,7 @@ function ProjectCard({ project, isHovered, onEnter, onLeave }) {
 
 export default function Projects() {
   const [hovered, setHovered] = useState(null);
+  const [selected, setSelected] = useState(null);
 
   return (
     <section id="kode" className="border-b-4 border-black bg-white">
@@ -89,7 +92,7 @@ export default function Projects() {
           </h2>
         </div>
         <p className="font-mono text-sm text-white opacity-80 max-w-xs">
-          Tiga proyek nyata. Tiga mekanisme koping yang berfungsi di produksi.
+          Deretan proyek nyata. Mekanisme koping yang berfungsi di produksi.
         </p>
       </div>
 
@@ -109,10 +112,15 @@ export default function Projects() {
               isHovered={hovered === i}
               onEnter={() => setHovered(i)}
               onLeave={() => setHovered(null)}
+              onClick={() => setSelected(p)}
             />
           </div>
         ))}
       </div>
+
+      {selected && (
+        <Modal project={selected} onClose={() => setSelected(null)} />
+      )}
     </section>
   );
 }

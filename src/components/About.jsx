@@ -53,7 +53,7 @@ export default function About() {
             className="border-4 border-black p-5 shadow-neo-lg"
             style={{ background: "#FF5733" }}
           >
-            <p className="font-display text-white text-sm tracking-widest italic">
+            <p className="font-display text-white text-md tracking-wide leading-relaxed">
               "MEMBANGUN DUNIA SENDIRI DI ANTARA BARIS KODE ADALAH CARA TERBAIK UNTUK MENDAPATKAN KETENANGAN."
             </p>
             <p className="font-mono text-xs mt-2 text-white opacity-70">
