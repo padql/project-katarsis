@@ -1,4 +1,5 @@
 import { STACK_LOG, SOLO_DEV } from "../data";
+import solodevImg from "../assets/solodev.jpeg";
 
 export default function About() {
   return (
@@ -74,12 +75,11 @@ export default function About() {
               DEVELOPER
             </p>
             <div className="flex items-start gap-4">
-              <div
-                className="w-16 h-16 border-4 border-black flex items-center justify-center font-display text-xl flex-shrink-0 shadow-neo"
-                style={{ background: SOLO_DEV.bg, color: SOLO_DEV.tc }}
-              >
-                {SOLO_DEV.initials}
-              </div>
+              <img
+                src={solodevImg}
+                alt={SOLO_DEV.name}
+                className="w-16 h-16 border-4 border-black object-cover flex-shrink-0 shadow-neo"
+              />
               <div>
                 <p className="font-display text-2xl text-white leading-tight">{SOLO_DEV.name}</p>
                 <p className="font-mono text-xs text-white opacity-60 tracking-widest mb-3">

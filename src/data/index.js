@@ -105,12 +105,9 @@ export const STACK_LOG = [
 
 // ─── Solo developer ──────────────────────────────────────────────────────────
 export const SOLO_DEV = {
-  name:     "D'NAKA",
-  role:     "FULL-STACK DEVELOPER",
-  initials: "DN",
-  bg:       "#FFE135",
-  tc:       "#000",
-  bio:      "Satu orang gila. Satu mesin tangguh. Semua proyek dikerjakan — dari konsep sampai piksel terakhir di layar.",
+  name: "Nakaterra",
+  role: "FULL-STACK DEVELOPER",
+  bio: "Satu orang gila. Satu mesin tangguh. Semua proyek dikerjakan — dari konsep sampai piksel terakhir di layar.",
 };
 
 // ─── Hero stats ──────────────────────────────────────────────────────────────
