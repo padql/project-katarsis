@@ -32,7 +32,7 @@ export default function Hero() {
               className="inline-block border-4 border-black px-3 py-1 font-display text-xs tracking-widest"
               style={{ background: "#FF5733", color: "#fff" }}
             >
-              SOFTWARE ARTISAN / FULL-STACK DEVELOPER
+              SOFTWARE ARTISAN / WEB DEVELOPER
             </span>
           </div>
 

@@ -106,7 +106,7 @@ export const STACK_LOG = [
 // ─── Solo developer ──────────────────────────────────────────────────────────
 export const SOLO_DEV = {
   name: "Nakaterra",
-  role: "FULL-STACK DEVELOPER",
+  role: "SOFTWARE ARTISAN",
   bio: "Satu orang gila. Satu mesin tangguh. Semua proyek dikerjakan — dari konsep sampai piksel terakhir di layar.",
 };
 
