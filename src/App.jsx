@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import About   from "./components/About";
 import Process from "./components/Process";
 import Contact from "./components/Contact";
+import SeasonalEffect from "./components/SeasonalEffect";
 
 const SECTION_IDS = ["kode", "manifesto", "kompilasi", "log"];
 
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SeasonalEffect />
       <Nav activeSection={activeSection} />
 
       <main className="pt-16">
